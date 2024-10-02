@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mturk\\source\\repos\\KartApplication\\KartApplication\\KartApplication.csproj": {}
+    "C:\\Users\\mturk\\source\\repos\\KartApplicationOppgave202\\KartApplication\\KartApplication\\KartApplication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mturk\\source\\repos\\KartApplication\\KartApplication\\KartApplication.csproj": {
+    "C:\\Users\\mturk\\source\\repos\\KartApplicationOppgave202\\KartApplication\\KartApplication\\KartApplication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mturk\\source\\repos\\KartApplication\\KartApplication\\KartApplication.csproj",
+        "projectUniqueName": "C:\\Users\\mturk\\source\\repos\\KartApplicationOppgave202\\KartApplication\\KartApplication\\KartApplication.csproj",
         "projectName": "KartApplication",
-        "projectPath": "C:\\Users\\mturk\\source\\repos\\KartApplication\\KartApplication\\KartApplication.csproj",
+        "projectPath": "C:\\Users\\mturk\\source\\repos\\KartApplicationOppgave202\\KartApplication\\KartApplication\\KartApplication.csproj",
         "packagesPath": "C:\\Users\\mturk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mturk\\source\\repos\\KartApplication\\KartApplication\\obj\\",
+        "outputPath": "C:\\Users\\mturk\\source\\repos\\KartApplicationOppgave202\\KartApplication\\KartApplication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mturk\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,9 +46,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [

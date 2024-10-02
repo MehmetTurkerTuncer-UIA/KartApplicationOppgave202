@@ -1,52 +1,47 @@
-﻿using KartApplication.Models;
-using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
+﻿using Microsoft.AspNetCore.Mvc;
+using KartApplication.Data;
+using KartApplication.Models;
 
-namespace KartApplication.Controllers
+public class HomeController : Controller
 {
-    public class HomeController : Controller
+    private readonly ApplicationDbContext _context;
+
+    public HomeController(ApplicationDbContext context)
     {
-        private readonly ILogger<HomeController> _logger;
+        _context = context;
+    }
 
-        public HomeController(ILogger<HomeController> logger)
+    [HttpGet]
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult SubmitForm(FormModel model)
+    {
+        if (ModelState.IsValid)
         {
-            _logger = logger;
-        }
-
-        [HttpGet]
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-
-        [HttpPost]
-        public IActionResult SubmitForm(FormModel model)
-        {
-            if (ModelState.IsValid)
+            // Veritabanına form verilerini kaydet
+            var location = new Location
             {
-                // Form verilerini işle
-                return RedirectToAction("FormResult", model);
-            }
-            return View("Index", model);
+                Name = model.Name,
+                Email = model.Email,
+                Latitude = model.Latitude,
+                Longitude = model.Longitude
+            };
+
+            _context.Locations.Add(location);
+            _context.SaveChanges();
+
+            return RedirectToAction("FormResult", model);
         }
 
-        public IActionResult FormResult(FormModel model)
-        {
-            return View(model);
-        }
+        return View("Index", model);
+    }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-
+    public IActionResult FormResult(FormModel model)
+    {
+        return View(model);
     }
 }

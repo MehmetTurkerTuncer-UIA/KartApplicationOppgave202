@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KartApplication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61f293f5b575af722a7b14950269226c1058f0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("KartApplication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KartApplication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
