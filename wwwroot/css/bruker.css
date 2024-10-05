@@ -1,0 +1,89 @@
+body {
+    background-color: #111;
+    color: white;
+}
+
+.sidebar {
+    background-color: #1f1f1f;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    width: 250px;
+}
+
+    .sidebar .logo {
+        color: gold;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .sidebar button {
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: #28a745;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+    }
+
+        .sidebar button.logout {
+            background-color: #ff6600;
+        }
+
+.map-container {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+    .top-navigation .step {
+        color: lightgray;
+        margin-right: 15px;
+    }
+
+    .top-navigation .active {
+        color: white;
+    }
+
+.map-container #map {
+    height: 500px;
+    border: 2px solid #333;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+    .action-buttons button {
+        width: 100px;
+        padding: 10px;
+        border: none;
+        color: white;
+    }
+
+    .action-buttons .blue {
+        background-color: #007bff;
+    }
+
+    .action-buttons .orange {
+        background-color: #ff9800;
+    }
+
+    .action-buttons .red {
+        background-color: #f44336;
+    }
+
+    .action-buttons .green {
+        background-color: #28a745;
+    }

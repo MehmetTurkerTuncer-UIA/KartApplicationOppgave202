@@ -1,0 +1,129 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex; /* Flexbox düzenine geçiş */
+    flex-direction: column; /* Dikey hizalama */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 20px; /* Form ile arama kutusu arasında boşluk */
+    box-sizing: border-box;
+    flex: 1; /* Esnek düzen için bu eklemeyi yapıyoruz */
+}
+
+.login-left {
+    text-align: center;
+    padding: 50px;
+    flex: 1;
+}
+
+.brand-logo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #f1c40f;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.login-left p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.login-right {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.account-box {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgba(255, 255, 255, 0.6); /* Kutunun arkasındaki gölgelendirme */
+    margin-bottom: 20px; /* Form ile arama kutusu arasında boşluk bırakır */
+}
+
+    .account-box h2 {
+        color: #ffffff;
+        font-size: 2em;
+    }
+   /* Arama Kutusu Sağda Olsun */
+.footer-search {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Tam genişlikte kalmaya devam ediyor */
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; /* Arama kutusunu sağa hizalamak için */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Input ve Button */
+.search-input {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 10px 15px;
+    margin-right: 10px; /* Input ile buton arasında boşluk bırakır */
+    border-radius: 5px;
+}
+
+.search-input:focus {
+    border-color: #f1c40f;
+    outline: none;
+}
+
+.btn-dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Footer alanı */
+.footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; /* Esneklik için ekleyin, bu sayede flex düzeni çalışır */
+}
+
+/* Telif Hakkı */
+.footer p {
+    flex: 1;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.verify-account-container {
+    max-width: 400px; /* Genişlik sınırı ekledik */
+    padding-top:100px;
+    height: 90vh;
+    margin: auto; /* Ortalamak için */
+}
+
+
